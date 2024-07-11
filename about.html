@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website With Login & Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Step Calculation</h2>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="Tracking.html">Schedule</a>
+            <a href="contact.html">Contact</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon" id="togglePassword"><ion-icon name="eye-off-outline"></ion-icon></span>
+                    <input type="password" id="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type ="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" class="register-link">Sign up</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon" id="toggleRegisterPassword"><ion-icon name="eye-off-outline"></ion-icon></span>
+                    <input type="password" id="registerPassword" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">I agree to the terms & conditions</label>
+                    
+                </div>
+                <button type ="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+     
+    <section class="hero-section">
+        <div class="content">
+            <h1>About Us </h1>
+            <p>
+                - We are a team of seven members that created the program called “Step Calculation”.
+                The program we built had the sole purpose of creating better calculation, awareness, and routine behavior tracking for our users.
+                When our users use our program to utilize and track their progress in exercising and managing their health, they are also trying to achieve the goal of keeping their lives healthy.
+                Because the only goal of our team is to keep everyone healthy and happy.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Drake_(musician)" class="button-link">
+                <button>Learn More</button>
+            </a>            
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
